@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sections</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red Hat Mono">
+<style>
+
+html {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none; scroll-behavior: smooth;
+  /*scroll-snap-points-y: repeat(100vh);*/
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100%;
+  padding: 0; margin: 0;
+  font: 1em 'Red Hat Mono';
+  background-image: linear-gradient(to bottom right, rgb(160, 30, 120), rgb(100, 20, 150));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* {box-sizing: border-box;}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 5% 10%;
+  position: relative;
+  /*overflow-y: scroll; scrollbar-width: none;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**/
+
+section:nth-child(1) {
+  background-image: url("");
+  min-height: 100%;
+}
+
+section:nth-child(2) {
+  background-image: url("");
+  min-height: 100%;
+}
+
+section:nth-child(3) {
+  background-image: url("");
+  min-height: 100%;
+}
+
+section:nth-child(4) {
+  background-image: url("");
+  min-height: 100%;
+}
+
+/**/
+
+section:nth-child(6) > h2 {background-color: black; display: inline; padding: .25em .5em;}
+section:nth-child(6) > span {background-color: black; font: 1em 'Consolas'; padding: .25em .5em;}
+
+/**/
+
+p {
+  white-space: pre-line;
+  font: 1.1em/1.3 'Georgia';
+  width: 70%; /*background-color: rgba(0, 0, 0, .75);*/
+  color: rgb(215, 215, 215);
+}
+
+h1 {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-100%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 2vw);
+}
+
+@media screen and (max-height: 600px) {
+  p {font-size: 1em;}
+  section:nth-child(9) {font-size: .85em;}
+  #win32 {font-size: .75em;}
+  section:nth-child(2), section:nth-child(5) {font-size: .9em;}
+}
+
+/**/
+
+a {padding: .2em .4em;}
+
+a:link {color: rgb(255, 181, 206); border: 1px solid rgb(255, 198, 236); text-decoration: none;} a:visited {color: rgb(136, 30, 145);}
+a:hover {color: /*rgb(255, 133, 219)*/ rgb(177, 81, 137); background-color: rgb(255, 198, 236); transition: .3s; text-decoration: none;} a:active {color: rgb(197, 70, 148);}
+
+.pag {position: absolute; bottom: 2em; right: 2em; padding: .5em; background-color: black; font-size: .7em !important;}
+
+</style>
+</head>
+<body>
+
+<div>
+
+<section id="s1">
+    <h2>S-1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget porttitor urna, nec feugiat est. Nunc luctus, dolor ac laoreet commodo, odio dui varius risus, at interdum odio sapien sed leo. Morbi finibus sapien purus, ac varius sem bibendum in. Morbi consectetur id ante a semper. Fusce eget ex sapien. Nulla ut tellus ut lectus condimentum ultrices et ac orci. Nulla cursus bibendum blandit. Sed scelerisque elit ut erat vehicula porta. Donec dictum, libero vel faucibus laoreet, sapien nisi condimentum sem, a tempus velit orci id enim. </p>
+</section>
+
+<section id="s2">
+    <h2>S-2</h2>
+    <p>Nam luctus aliquet nibh, eget tincidunt libero iaculis non. Integer nibh felis, ornare nec tellus non, vulputate bibendum metus. Nullam euismod a dui ut ornare. Nulla convallis porttitor lectus et dapibus. Praesent congue pellentesque lectus. Sed quis tempor purus. Cras neque ipsum, molestie quis turpis sed, commodo iaculis nisi. Nulla at purus in ex vulputate scelerisque. Duis viverra hendrerit maximus. Praesent eget mi porta, ullamcorper ex vitae, accumsan ligula. Nulla facilisi. Morbi eget tortor leo. Donec ut felis id diam vestibulum fermentum. Ut sit amet neque mollis, lacinia arcu id, varius ante. Etiam suscipit, eros in consequat cursus, eros nunc pellentesque augue, a rhoncus tellus ipsum a sapien. Aliquam vitae nunc elit. </p>
+</section>
+
+<section id="s3">
+    <h2>S-3</h2>
+    <p>Proin eu diam sit amet eros placerat tempor. Pellentesque nibh massa, volutpat vitae bibendum aliquet, euismod sit amet augue. Donec ac rutrum nisi. Aliquam dignissim nulla at leo luctus, ac blandit dolor accumsan. Pellentesque auctor dignissim fringilla. Nam odio est, porta eu risus consectetur, dignissim imperdiet tellus. Etiam accumsan lectus a ipsum luctus placerat. Sed ullamcorper augue non sapien fermentum tincidunt. Aliquam ut consectetur risus. Suspendisse fringilla mi tellus. In eget dui neque. Praesent ornare mauris in consectetur ornare. Nulla facilisi. Vivamus a neque elit. Donec dolor tellus, aliquet mattis tristique tincidunt, tincidunt vel tellus. Donec ac est lectus. </p>
+</section>
+
+<section id="s4">
+    <h2>S-4</h2>
+    <p>Proin tincidunt porta dolor, sit amet condimentum velit. Mauris laoreet tellus id vulputate interdum. Quisque ipsum diam, porta vitae bibendum at, viverra ut enim. Fusce ac fringilla nunc, in placerat purus. Nunc imperdiet arcu mattis neque rutrum lobortis. Vivamus lectus enim, dignissim quis venenatis quis, condimentum quis mi. Curabitur placerat, eros a blandit facilisis, nibh metus aliquet elit, placerat ultricies lacus odio at erat. Sed sollicitudin gravida suscipit. Nulla feugiat a ante id rhoncus. Nam interdum felis magna, vitae interdum massa dictum et. Nulla facilisi. In vitae elit gravida, scelerisque diam at, laoreet dui. </p>
+</section>
+
+<section id="s5">
+    <h2>S-5</h2>
+    <p>Nulla sodales, tortor et fringilla interdum, neque ex venenatis nulla, at molestie nibh tortor sed dui. Suspendisse non mauris velit. Quisque pulvinar purus ut mauris porta suscipit. Etiam risus tortor, mollis a varius at, faucibus ac ex. Fusce mattis orci molestie justo congue condimentum. Integer efficitur urna quis vehicula iaculis. Vestibulum porta erat diam, ut venenatis elit luctus ac. </p>
+</section>
+
+</div>
+
+</body>
+</html>
