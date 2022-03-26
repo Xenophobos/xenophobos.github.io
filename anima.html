@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red Hat Mono">
+<style>
+
+html, body {
+  background-color: black;
+  font-family: 'Red Hat Mono';
+  font-size: 14px;
+  color: white;
+  margin: 0; padding: 0;
+}
+
+body {
+  max-width: 100%;
+  margin: 0; padding: 2em;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+.crc {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(100, 100, 100);
+  /*position: relative;*/
+  animation: circ 10s linear infinite;
+  animation-fill-mode: both;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*@keyframes circ {
+  0%      {background-color: red; left:0%; top:0%;}
+  6.25%   {background-color: yellow; left:25%; top:-25%;}
+  12.5%   {background-color: blue; left:0%; top:-50%;}
+  18.75%  {background-color: green; left:-25%; top:-25%;}
+  25%     {background-color: blue; left:0%; top:0%;}
+  31.25%  {background-color: yellow; left:25%; top:25%;}
+  37.5%   {background-color: red; left:0%; top:50%;}
+  43.75%  {background-color: yellow; left:-25%; top:25%;}
+  50%     {background-color: blue; left:0%; top:0%;}
+  56.25%  {background-color: green; left:25%; top:-25%;}
+  62.5%   {background-color: blue; left:50%; top:0%;}
+  68.75%  {background-color: yellow; left:25%; top:25%;}
+  75%     {background-color: red; left:0%; top:0%;}
+  81.25%  {background-color: yellow; left:-25%; top:-25%;}
+  87.5%   {background-color: blue; left:-50%; top:0%;}
+  93.75%  {background-color: green; left:-25%; top:25%;}
+  100%    {background-color: yellow; left:0%; top:0%;}
+}*/
+
+/*@keyframes circ {
+  0%      {background-color: red; left:0px; top:0px;}
+  6.25%   {background-color: yellow; left:25px; top:-25px;}
+  12.5%   {background-color: blue; left:0px; top:-50px;}
+  18.75%  {background-color: green; left:-25px; top:-25px;}
+  25%     {background-color: blue; left:0px; top:0px;}
+  31.25%  {background-color: yellow; left:25px; top:25px;}
+  37.5%   {background-color: red; left:0px; top:50px;}
+  43.75%  {background-color: yellow; left:-25px; top:25px;}
+  50%     {background-color: blue; left:0px; top:0px;}
+  56.25%  {background-color: green; left:25px; top:-25px;}
+  62.5%   {background-color: blue; left:50px; top:0px;}
+  68.75%  {background-color: yellow; left:25px; top:25px;}
+  75%     {background-color: red; left:0px; top:0px;}
+  81.25%  {background-color: yellow; left:-25px; top:-25px;}
+  87.5%   {background-color: blue; left:-50px; top:0px;}
+  93.75%  {background-color: green; left:-25px; top:25px;}
+  100%    {background-color: yellow; left:0px; top:0px;}
+}*/
+
+/*.romb {
+    width: 50px;
+    height: 50px;
+    transform-origin: 200% center;
+    position: relative;
+    animation: romb 10s linear infinite;
+    background-color: blue;
+    border-radius: 50px;
+}*/
+
+/*@keyframes romb {
+  0%      {background-color: red; left:0px; top:0px;}
+  6.25%   {background-color: yellow; left:50px; top:-50px;}
+  12.5%   {background-color: blue; left:0px; top:-100px;}
+  18.75%  {background-color: green; left:-50px; top:-50px;}
+  25%     {background-color: blue; left:0px; top:0px;}
+  31.25%  {background-color: yellow; left:50px; top:50px;}
+  37.5%   {background-color: red; left:0px; top:100px;}
+  43.75%  {background-color: yellow; left:-50px; top:50px;}
+  50%     {background-color: blue; left:0px; top:0px;}
+  56.25%  {background-color: green; left:50px; top:-50px;}
+  62.5%   {background-color: blue; left:100px; top:0px;}
+  68.75%  {background-color: yellow; left:50px; top:50px;}
+  75%     {background-color: red; left:0px; top:0px;}
+  81.25%  {background-color: yellow; left:-50px; top:-50px;}
+  87.5%   {background-color: blue; left:-100px; top:0px;}
+  93.75%  {background-color: green; left:-50px; top:50px;}
+  100%    {background-color: yellow; left:0px; top:0px;}
+}*/
+
+@keyframes circ {
+    from {transform: rotate(0deg) translateX(100px) rotate(0deg);}
+    to   {transform: rotate(360deg) translateX(100px) rotate(-360deg);}
+}
+
+@keyframes circ2 {
+    from {transform: rotate(0deg) translateX(50px) rotate(0deg);}
+    to   {transform: rotate(360deg) translateX(50px) rotate(-360deg);}
+}
+
+@keyframes circ3 {
+    from {transform: rotate(0deg) translateX(150px) rotate(0deg);}
+    to   {transform: rotate(360deg) translateX(150px) rotate(-360deg);}
+}
+
+.r360 {
+    width: 50px;
+    height: 50px;
+    /*transform-origin: 200% center;
+    position: relative;*/
+    animation: rotate 2s linear infinite;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*.r360:before {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: blue;
+    animation: rotate 3s linear reverse infinite;
+}*/
+
+@keyframes rotate {
+    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+</style>
+</head>
+<body>
+
+<b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.
+
+<div style="width: 500px;height: 500px;transform: translate(50%, 50%);margin: 0 auto;position: relative;display: none">
+
+    <div class="crc">
+        <div class="crc" style="animation-duration: 5s;animation-direction: reverse;">
+            <!--<div class="crc" style="animation-duration: 10s;animation-direction: alternate-reverse;"></div>-->
+            <div class="crc" style="animation-duration: 2s;animation-direction: normal;"></div>
+        </div>
+    </div>
+
+</div>
+
+<div style="width: 500px;height: 500px;transform: translate(50%, 50%);margin: 0 auto;position: relative;display: none">
+
+  <div class="crc">
+    <div class="crc" style="animation-duration: 5s;animation-direction: reverse;animation: circ 10s linear infinite;">
+      <div class="crc" style="animation-duration: 2s;animation-direction: normal;">
+        <div class="crc" style="animation-direction: reverse;">
+          <div class="crc" style="animation-duration: 5s;">
+            <div class="crc" style="animation-duration: 2s;animation-direction: reverse;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="width: 250px; height: 250px; transform: translate(50%, 140%); margin: 0 auto; position: relative;">
+
+  <div class="crc" style="animation-duration: 7s;">
+    <div class="crc" style="animation-direction: reverse;animation: circ3 2s linear infinite;">
+      <div class="crc" style="animation-duration: 2s;animation-direction: reverse;">
+        <div class="crc" style="animation-direction: normal;animation: circ2 1s linear infinite;">
+          <!--<div class="crc" style="animation-duration: 5s;animation: circ3 2s linear infinite;animation-direction: normal;">-->
+          <div class="crc" style="animation-duration: 5s;animation: circ3 2s linear infinite;animation-direction: normal;">
+            <div class="crc" style="animation-duration: 4s;animation-direction: reverse;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
